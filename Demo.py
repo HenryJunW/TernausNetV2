@@ -4,7 +4,10 @@
 # In[1]:
 
 
-get_ipython().magic(u'matplotlib inline')
+#get_ipython().magic(u'matplotlib inline')
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot
 from pylab import *
 from skimage.morphology import watershed
 import scipy.ndimage as ndimage
